@@ -21,14 +21,14 @@ async def refunc(client, message):
             await message.reply_to_message.delete()
             if mime == "video":
                 markup = InlineKeyboardMarkup([[
-                    InlineKeyboardButton("📁 Document", callback_data="doc"),
+                    InlineKeyboardButton("📂 Document", callback_data="doc"),
                     InlineKeyboardButton("🎥 Video", callback_data="vid")]])
             elif mime == "audio":
                 markup = InlineKeyboardMarkup([[InlineKeyboardButton(
-                    "📁 Document", callback_data="doc"), InlineKeyboardButton("🎵 Audio", callback_data="aud")]])
+                    "📂 Document", callback_data="doc"), InlineKeyboardButton("🎵 Audio", callback_data="aud")]])
             else:
                 markup = InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("📁 Document", callback_data="doc")]])
+                    [[InlineKeyboardButton("📂 Document", callback_data="doc")]])
             # dont chenge this message.reply_text
             await message.reply_text(f"**Select The Output File Type**\n\n**Output Filename** :- `{out_filename}`", reply_to_message_id=mg_id, reply_markup=markup)
 
@@ -44,13 +44,13 @@ async def refunc(client, message):
             await message.reply_to_message.delete()
             if mime == "video":
                 markup = InlineKeyboardMarkup([[InlineKeyboardButton(
-                    "📁 Document", callback_data="doc"), InlineKeyboardButton("🎥 Video", callback_data="vid")]])
+                    "📂 Document", callback_data="doc"), InlineKeyboardButton("🎥 Video", callback_data="vid")]])
             elif mime == "audio":
                 markup = InlineKeyboardMarkup([[InlineKeyboardButton(
                     "📁 Document", callback_data="doc"), InlineKeyboardButton("🎵 Audio", callback_data="aud")]])
             else:
                 markup = InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("📁 Document", callback_data="doc")]])
+                    [[InlineKeyboardButton("📂 Document", callback_data="doc")]])
             # dont chenge this message.reply_text
             await message.reply_text(f"**Select The Output File Type**\n\n**Output Filename** :- `{out_filename}`",
                                      reply_to_message_id=mg_id, reply_markup=markup)
