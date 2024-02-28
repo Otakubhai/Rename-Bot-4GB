@@ -9,7 +9,8 @@ async def upgrade(bot,update):
 	
 	**🪙 Basic** 
 	Daily  Upload  limit 20GB
-	Price Rs 23 ind /🌎 0.35$  per Month
+	Price Rs 19 ind /🌎 0.35$  per Month
+        [Price will increase soon]
 	
 	**⚡ Standard**
 	Daily Upload limit 50GB
@@ -20,10 +21,10 @@ async def upgrade(bot,update):
 	Price Rs 69 ind /🌎 0.83$  per Month
 	
 	
-	Pay Using Upi I'd `madflixofficial@axl`
+	Pay Using Upi I'd `ogbhargav@fam`
 	
 	After Payment Send Screenshots Of 
-        Payment To Admin @calladminrobot"""
+        Payment To Admin @Otaku_Library_Support_Bot"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Admin",url = "https://t.me/Otaku_Library_Support_Bot")], 
         			[InlineKeyboardButton("Sacne Code",url = "https://telegra.ph/file/396977d1b4a2e37c3e36d.jpg"),
@@ -39,7 +40,8 @@ async def upgradecm(bot,message):
 	
 	**🪙 Basic** 
 	Daily  Upload  limit 20GB
-	Price Rs 23  ind /🌎 0.35$  per Month
+	Price Rs 19  ind /🌎 0.35$  per Month
+        [Price will increase soon] 
 	
 	**⚡ Standard**
 	Daily Upload limit 50GB
