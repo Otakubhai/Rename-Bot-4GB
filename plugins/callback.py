@@ -19,7 +19,7 @@ async def about(bot,update):
 async def donatecm(bot,message):
 	text = script.DONATE_TXT
 	keybord = InlineKeyboardMarkup([
-        			[InlineKeyboardButton("🦋 Admin",url = "https://t.me/CallAdminRobot"), 
+        			[InlineKeyboardButton("🦋 Admin",url = "https://t.me/Otaku_Library_Support_Bot"), 
         			InlineKeyboardButton("✖️ Close",callback_data = "cancel") ]])
 	await message.reply_text(text = text,reply_markup = keybord)
 
@@ -68,13 +68,13 @@ async def donate(bot,update):
 
 @Client.on_callback_query(filters.regex('home'))
 async def home_callback_handler(bot, query):
-    text = f"""Hello {query.from_user.mention} \n\n➻ This Is An Advanced And Yet Powerful Rename Bot.\n\n➻ Using This Bot You Can Rename And Change Thumbnail Of Your Files.\n\n➻ You Can Also Convert Video To File Aɴᴅ File To Video.\n\n➻ This Bot Also Supports Custom Thumbnail And Custom Caption.\n\n<b>Bot Is Made By @Madflix_Bots</b>"""
+    text = f"""Hello {query.from_user.mention} \n\n**☙ Recommended to buy premium at just 19rs per month.** \n\n➥ This Is An Advanced And Yet Powerful Rename Bot.\n\n➥ Using This Bot You Can Rename And Change Thumbnail Of Your Files.\n\n➥ You Can Also Convert Video To File & File To Video.\n\n➥ This Bot Also Supports Custom Thumbnail And Custom Caption.\n\n<b> Powered by @The_Otaku_Federation </b>"""
     keybord = InlineKeyboardMarkup([  
-                    [InlineKeyboardButton("📢 Updates", url="https://t.me/Madflix_Bots"),
-                    InlineKeyboardButton("💬 Support", url="https://t.me/MadflixBots_Support")],
-                    [InlineKeyboardButton("🛠️ Help", callback_data='help'),
+                    [InlineKeyboardButton("✨ Updates", url="https://t.me/TheBotsLibrary"),
+                    InlineKeyboardButton("🤝🏻 Support", url="https://t.me/+hkLbiOernSsxYWQ1")],
+                    [InlineKeyboardButton("⁉️ Help", callback_data='help'),
 		            InlineKeyboardButton("❤️‍🩹 About", callback_data='about')],
-                    [InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url="https://t.me/CallAdminRobot")]
+                    [InlineKeyboardButton("👷🏻‍♂️ Developer 👷🏻‍♂️", url="https://t.me/Otaku_Library_Support_Bot")]
 		  ])
     await query.message.edit_text(text=text, reply_markup=keybord)
 
